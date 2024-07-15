@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Trend Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/submit_prediction" method="post">
+        <h2>Prediction Submission Form</h2>
+        <label for="Prediction-details">Prediction Details:</label>
+        <textarea id="Prediction-details" name="Prediction-details" rows="10" cols="50" required></textarea>
+        <br>
+        <label for="Reason">Reason:</label>
+        <textarea id="Reason" name="Reason" rows="7" cols="50" required></textarea>
+        <br>
+        <label for="Any Supporting Details">Any Supporting Details:</label>
+        <textarea id="Any Supporting Details" name="Any Supporting Details" rows="7" cols="50" required></textarea>
+        <br>
+        <input type="Submit" value="Submit Prediction">
+    </form>
+    <h2>List of Predictions</h2>
+<ul>
+    <li>Spring 2025: Neon colors will dominate streetwear.</li>
+    <li>Fall 2025: Oversized blazers will make a comeback.</li>
+    <!-- Add more predictions here -->
+</ul>
+
+    <div class="prediction">
+        <p>Spring 2025: Neon colors will dominate streetwear.</p>
+        <button class="upvote-button">👍</button>
+        <button class="downvote-button">👎</button>
+        <span class="voting-count">42 votes</span>
+    </div>
+    
+
+</body>
